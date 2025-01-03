@@ -77,3 +77,11 @@ D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\obj\Debug\VoPhanKhaHy_21221
 D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\obj\Debug\VoPhanKh.8526457F.Up2Date
 D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\obj\Debug\VoPhanKhaHy_2122110243.dll
 D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\obj\Debug\VoPhanKhaHy_2122110243.pdb
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\EntityFramework.dll
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\EntityFramework.SqlServer.dll
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\EntityFramework.xml
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\EntityFramework.SqlServer.xml
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\PagedList.dll
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\PagedList.Mvc.dll
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\PagedList.xml
+D:\ASP\VoPhanKhaHy_2122110243\VoPhanKhaHy_2122110243\bin\PagedList.Mvc.xml

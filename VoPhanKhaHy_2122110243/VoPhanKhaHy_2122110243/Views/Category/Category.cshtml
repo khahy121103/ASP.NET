@@ -1,152 +1,61 @@
-﻿@{
+﻿@model List<VoPhanKhaHy_2122110243.Context.Category>
+@{
     ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- ========================= SECTION CONTENT ========================= -->
-<section class="section-content padding-y">
+<section class="section-content py-5">
     <div class="container">
-
-        <nav class="row">
-            <div class="col-md-3">
-
-                <div class="card card-category">
-                    <div class="img-wrap" style="background: #ffd7d7">
-                        <img src="~/Content/images/items/1.jpg">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">@Html.ActionLink("Summer shirts", "Detail", "Product", new {},null)</h4>
-                        <ul class="list-menu">
-                            <li><a href="">Unisex T shirts</a></li>
-                            <li><a href="">Casual shirts</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="img-wrap overflow-hidden position-relative" style="height: 200px;">
+                            <img src="~/Content/images/category/@item.Avartar" alt="@item.Name"
+                                 class="card-img-top h-100 w-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2 text-truncate">
+                                <a href="href="@Url.Action("ProductCategory", "Category", new { id = item.Id }, null)"" class="text-decoration-none text-dark">@item.Name</a>
+                            </h5>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <div class="img-wrap" style="background: #FFF68D">
-                        <img src="~/Content/images/items/2.jpg">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Winter jackets</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Leather jackets</a></li>
-                            <li><a href="">Men's jackets</a></li>
-                            <li><a href="">Heating battery clothes</a></li>
-                            <li><a href="">Jeans jackets</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <div class="img-wrap" style="background: #bcffb8">
-                        <img src="~/Content/images/items/3.jpg">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Shorts</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Jeans shorts</a></li>
-                            <li><a href="">Swimming shorts</a></li>
-                            <li><a href="">Another some shorts</a></li>
-                            <li><a href="">Another category</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <div class="img-wrap" style="background: #c9fff3">
-                        <img src="~/Content/images/items/4.jpg">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Travel bags </a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Leather bags</a></li>
-                            <li><a href="">Cook & Hold ovens</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <a href="#" class="img-wrap" style="background: #ddffeb">
-                        <img src="~/Content/images/items/5.jpg">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Great items</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Combi steamers</a></li>
-                            <li><a href="">Cook & Hold ovens</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <a href="#" class="img-wrap" style="background: #dee4ff">
-                        <img src="~/Content/images/items/6.jpg">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Kitchen furniture</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Combi steamers</a></li>
-                            <li><a href="">Cook & Hold ovens</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <a href="#" class="img-wrap" style="background: #ddffeb">
-                        <img src="~/Content/images/items/2.jpg">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Great items</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Combi steamers</a></li>
-                            <li><a href="">Cook & Hold ovens</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-md-3">
-                <div class="card card-category">
-                    <a href="#" class="img-wrap" style="background: #dee4ff">
-                        <img src="~/Content/images/items/1.jpg">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Other clothes</a></h4>
-                        <ul class="list-menu">
-                            <li><a href="">Jeans shorts</a></li>
-                            <li><a href="">Cook & Hold ovens</a></li>
-                            <li><a href="">Scherf Ice cream</a></li>
-                            <li><a href="">Another category</a></li>
-                            <li><a href="">Great items name</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- col.// -->
-        </nav> <!-- row.// -->
-
-
-    </div> <!-- container .//  -->
+            }
+        </div>
+    </div>
 </section>
 <!-- ========================= SECTION CONTENT END// ========================= -->
+
+<style>
+    .section-content {
+        background-color: #f9f9f9;
+    }
+
+    .card {
+        border: none;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .img-wrap {
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+    }
+
+    .card-title a {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+        .card-title a:hover {
+            color: #007bff;
+        }
+</style>
